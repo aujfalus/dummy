@@ -3,18 +3,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat '''
-                    echo 1
-                    echo 2
-                    echo 3'''
-                sleep 2
+                echo "Hello World"
+                sleep 5
             }    
         }
         stage('Build more') {        
             steps {
-                bat '''
-                    call c:\\Users\\Andris\\Documents\\Andris\\Segron_project\\Git_projects_v2\\Repos\\dummy\\hello_world.bat'''
-                sleep 2
+                echo "Hello again world!"
+                sleep 5
             }
         }
     }
